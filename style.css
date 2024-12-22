@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(36, 36, 36);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+html{
+    background-color: rgb(36, 36, 36);
+}
+
+header h1 {
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+    margin-left: 10px;
+    border-radius: 24px;
+    transition: transform 0.3s ease;
+}
+
+header img:hover{
+    transform: scale(1.3);
+}
+
+.songs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: auto;
+    background-color: rgb(36, 36, 36);
+}
+
+.songs-container .sparra1, 
+.songs-container .sparra2,
+.songs-container .sparra3, 
+.songs-container .sparra4,
+.songs-container .sparra5, 
+.songs-container .sparra6, 
+.songs-container .sparra7, 
+.songs-container .sparra8, 
+.songs-container .sparra9,
+.songs-container2 .sparra-a-natale
+{
+    width: 300px;
+    flex: 0 0 auto;
+    transition: transform 0.3s ease; /* Transizione per l'animazione di ingrandimento */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.songs-container .sparra1.enlarged, 
+.songs-container .sparra2.enlarged,
+.songs-container .sparra3.enlarged, 
+.songs-container .sparra4.enlarged,
+.songs-container .sparra5.enlarged, 
+.songs-container .sparra6.enlarged, 
+.songs-container .sparra7.enlarged, 
+.songs-container .sparra8.enlarged, 
+.songs-container .sparra9.enlarged,
+.songs-container2 .sparra-a-natale.enlarged{
+    transform: scale(1.15); /* Ingrandimento del contenitore */
+}
+
+.sparra1, .sparra2, .sparra3, .sparra4, .sparra5, .sparra6, .sparra7, .sparra8, .sparra9, .sparra-a-natale{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 8px 8px 20px rgba(172, 171, 171, 0.3);
+    padding: 15px;
+    max-width: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    width: 300px;
+    height: 330px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom:30px;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.sparra1 img{
+    width: 180px;
+    border-radius: 24px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sparra1 audio, .sparra2 audio, .sparra3 audio, .sparra4 audio, .sparra5 audio, .sparra6 audio, .sparra7 audio, .sparra8 audio, .sparra9 audio, .sparra-a-natale audio{
+    width: 280px;
+}
+
+.sparra1 h3, .sparra2 h3, .sparra3 h3, .sparra4 h3, .sparra4 h3, .sparra5 h3, .sparra6 h3, .sparra7 h3, .sparra8 h3, .sparra9 h3, .sparra-a-natale h3{
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+
+.sparra2 img{
+    width: 190px;
+    border-radius: 24px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sparra3 img{
+    width: 180px;
+    border-radius: 24px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sparra4 img{
+    width: 190px;
+    border-radius: 24px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sparra5 img{
+    width: 190px;
+    border-radius: 24px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sparra6 img{
+    width: 190px;
+    border-radius: 24px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sparra7 img{
+    width: 190px;
+    border-radius: 24px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sparra8 img{
+    width: 190px;
+    border-radius: 24px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sparra9 img{
+    width: 190px;
+    border-radius: 24px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sparra-a-natale img{
+    width: 190px;
+    border-radius: 24px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+hr{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+.songs-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: auto;
+    background-color: rgb(36, 36, 36);
+}

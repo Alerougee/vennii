@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>VENNY SONG</title>
+    </head>
+    <body>
+        <header>
+            <h1>VENNY 9</h1>
+            <a href="https://www.instagram.com/cristian_20045_/">
+                <img src="VENNY.png" class="image">
+            </a>
+        </header>
+
+    </body>
+
+    <h1>GLI SPARRA</h1>
+
+    <div class="songs-container">
+        <div class="sparra1">
+            <img src="venni 1.jpg">
+            <h3>Sparra 1</h3>
+            <audio controls>
+                <source src="Sparra 1.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    
+        <div class="sparra2">
+            <img src="venni 2.jpg">
+            <h3>Sparra2</h3>
+            <audio controls>
+                <source src="Sparra 2.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    
+        <div class="sparra3">
+            <img src="venni3.jpg">
+            <h3>Sparra3</h3>
+            <audio controls>
+                <source src="Sparra 3.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    
+        <div class="sparra4">
+            <img src="venni 4.jpg">
+            <h3>Sparra 4</h3>
+            <audio controls>
+                <source src="Sparra 4.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    
+        <div class="sparra5">
+            <img src="venni 5.jpg">
+            <h3>Sparra 5</h3>
+            <audio controls>
+                <source src="Sparra 5.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    
+        <div class="sparra6">
+            <img src="venni 6.jpg">
+            <h3>Sparra 6</h3>
+            <audio controls>
+                <source src="Sparra 6.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    
+        <div class="sparra7">
+            <img src="venni 7.jpg">
+            <h3>Sparra 7</h3>
+            <audio controls>
+                <source src="Sparra 7.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    
+        <div class="sparra8">
+            <img src="venni 8.jpg">
+            <h3>Sparra 8</h3>
+            <audio controls>
+                <source src="Sparra 8.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    
+        <div class="sparra9">
+            <img src="venni 9.jpg">
+            <h3>Sparra 9</h3>
+            <audio controls>
+                <source src="Sparra 9.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+    
+    <hr>
+
+    <div class="songs-container2">
+        <div class="sparra-a-natale">
+            <img src="natale.jpg">
+            <h3>Venny a natale</h3>
+            <audio controls>
+                <source src="venny a natale.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+</html>
+
+<script>
+    // Recupera tutti gli elementi audio nella pagina
+    const audioElements = document.querySelectorAll('audio');
+
+    // Aggiungi un event listener per ogni audio
+    audioElements.forEach(audio => {
+        audio.addEventListener('play', () => {
+            // Ferma tutti gli altri audio
+            audioElements.forEach(otherAudio => {
+                if (otherAudio !== audio) {
+                    otherAudio.pause();
+                }
+            });
+        });
+    });
+
+// Seleziona tutti gli audio
+const audios = document.querySelectorAll('audio');
+
+// Aggiungi un evento per ogni audio
+audios.forEach(audio => {
+  // Trova il contenitore del div che include l'audio
+  const container = audio.closest('div');
+
+  // Aggiungi l'effetto di ingrandimento quando l'audio inizia a riprodursi
+  audio.addEventListener('play', () => {
+    container.classList.add('enlarged');
+  });
+
+  // Rimuovi l'effetto di ingrandimento quando l'audio viene messo in pausa
+  audio.addEventListener('pause', () => {
+    container.classList.remove('enlarged');
+  });
+
+  // Rimuovi l'effetto di ingrandimento quando l'audio termina
+  audio.addEventListener('ended', () => {
+    container.classList.remove('enlarged');
+  });
+});
+</script>
